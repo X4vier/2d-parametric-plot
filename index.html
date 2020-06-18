@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="canvas-container">
+    <canvas
+      id="canvas"
+      width="660"
+      height="660"
+      style="border: solid;"
+    ></canvas>
+  </div>
+    <div id="left">
+    <p></p>
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="zoomIn()">Zoom In</button>
+    <button onclick="zoomOut()">Zoom Out</button>
+    <p>x(t) = <input id="function_x" value='sin(t)' size=10></input> y(t) = <input id="function_y" value='tan(t)' size=10></input></p>
+    <p><button onclick="updateFunction()">Update</button></p>
+    <div style="display: flex; flex-wrap: wrap;">
+    <p id="xpos"></p>
+    <p id="ypos"></p>
+    <p id="tpos"></p>
+  </div>
+    
+  
+  </div>
+  <div id="right">
+    <p id=tailLengthText>Tail length: 40</p>
+    <input type="range" min="5" max="100" value="40" class="slider" id="tail_range">
+
+    <p id=tailSpacingText>Tail spacing: 0.08</p>
+    <input type="range" min="0" max="50" value="8" class="slider" id="tail_spacing">
+  </div>
+  </body>
+
+  <script src="./script.js"></script>
+</html>

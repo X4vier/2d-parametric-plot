@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+}
+
+#left {
+  width: 50%;
+}
+
+#right {
+  width: 50%;
+}
+
+#canvas-container {
+  width: 100%;
+}
+
+#xpos {
+  width: 33%;
+}
+#ypos {
+  width: 33%;
+}
+#tpos {
+  width: 33%;
+}
